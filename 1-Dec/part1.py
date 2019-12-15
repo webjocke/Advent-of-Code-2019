@@ -1,0 +1,1 @@
+with open("i") as f: print(sum([int(float(x.strip())/3)-2 for x in f.readlines()]))
