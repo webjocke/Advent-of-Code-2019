@@ -24,7 +24,7 @@ def generate_paths(instructions):
 
     return history, full_history
 
-with open("test") as fp:
+with open("i") as fp:
     paths = fp.read().split("\n")
     
     history_one, full_history_one = generate_paths([x.strip() for x in paths[0].split(",")])
