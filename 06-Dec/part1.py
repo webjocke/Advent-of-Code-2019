@@ -1,0 +1,1 @@
+with open("i") as i: print ((f := (lambda o, a, z, d=0, r=0: z[-1] if (z := [r for b in a if b[0] == o and (r := d + 1 + f(b[1], a, z, d+1, r))]) != [] else r))("COM", [(x.split(')')[0], x.split(')')[1]) for x in i.read().split("\n")], None))
